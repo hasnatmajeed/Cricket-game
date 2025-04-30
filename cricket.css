@@ -1,0 +1,70 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f0f8ff, #d8e2f3);
+  text-align: center;
+  padding: 50px 20px;
+  margin: 0;
+}
+
+
+.choice-button, .reset-button {
+  height: 120px;  
+  width: 120px;
+  border: none;
+  margin: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.choice-button {
+  background-color: #2ecc71; 
+}
+
+.reset-button {
+  background-color: #e74c3c; 
+}
+
+.choice-button:hover, .reset-button:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.choice-button:active, .reset-button:active {
+  transform: scale(1); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.choice-img {
+  height: 75px;
+  width: 75px;  
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.choice-button:hover .choice-img, .reset-button:hover .choice-img {
+  transform: scale(1.1);
+}
+
+
+.choice-button:focus, .reset-button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.7);
+}
+
+.choice-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.choice-container {
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
